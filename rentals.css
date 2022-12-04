@@ -1,0 +1,260 @@
+:root {
+  --db: #14213d;
+  --or: #fca311;
+  --gr: #e5e5e5;
+}
+
+.grid-wrapper {
+  height: 100%;
+  display: grid;
+  height: 320vh;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 40rem 10rem 1fr 1fr 1fr 5rem;
+
+  grid-template-areas:
+    "nav"
+    "showcase"
+    "empty"
+    "german"
+    "italian"
+    "american"
+    "footer";
+}
+
+@media screen and (max-width: 700px) {
+  .car-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 4rem;
+    width: 100%;
+  }
+
+  .car-panel {
+    margin: auto !important;
+    background-color: #fca311;
+  }
+
+  .bg-third {
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+.car-column {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.car-panel {
+  vertical-align: center;
+  width: 20rem;
+  height: 18rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.car-panel:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+}
+
+.car-panel h6 {
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.car-panel p {
+  height: 10%;
+  margin: 0 6px;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.car-panel p.price {
+  vertical-align: middle;
+  height: 1.6rem;
+}
+
+.car-panel > hr {
+  display: block;
+  height: 1px;
+  width: 90%;
+  border: 0;
+  border-top: 1px solid black;
+  padding: 0;
+}
+
+.panel-button {
+  background-color: var(--or);
+  border: none;
+  width: 40%;
+  height: 100%;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+.panel-button:hover {
+  background-color: var(--db);
+  color: white;
+  transform: translateX(10px);
+}
+
+.sub-sec {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.sub-item {
+  vertical-align: middle;
+  margin: 0px 6px;
+  font-size: 1rem;
+  height: 1.5rem;
+}
+
+.car-panel.sub-item {
+  margin: 0px 6px;
+}
+
+.model-img {
+  height: 60%;
+}
+
+.show-img {
+  float: left;
+  width: 0.333%;
+}
+
+.cmodel {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#showcase {
+  grid-area: showcase;
+  background-color: #fca311;
+}
+
+#german {
+  grid-area: german;
+  justify-content: center;
+}
+
+#italian {
+  grid-area: italian;
+  background: var(--gr);
+}
+
+#american {
+  grid-area: american;
+}
+
+.offer-list {
+  list-style-type: none;
+}
+
+.bg-third {
+  filter: var(--db);
+  width: 33.333%;
+  margin: 0;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+#bg-1 {
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+#bg-2 {
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40%;
+}
+
+#bg-3 {
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i5.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+
+.show-backg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-container {
+  position: relative;
+  margin: -15rem auto auto auto;
+  z-index: 3;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #e5e5e5;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.menu-container h2 {
+  padding: 1rem;
+}
+
+.selection-bg {
+  overflow-wrap: break-word;
+  color: #e5e5e5;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 60%;
+  background-color: #363636;
+  border-radius: 3px;
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem auto 0.5rem auto;
+}

@@ -1,0 +1,122 @@
+:root {
+  --db: rgb(20, 33, 62);
+  --or: #fca311;
+  --gr: #e5e5e5;
+}
+
+.grid-wrapper {
+  height: 100%;
+  display: grid;
+  height: 170vh;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 40rem 1fr 20rem 5rem;
+
+  grid-template-areas:
+    "nav"
+    "tracks"
+    "empty"
+    "track-links"
+    "footer";
+}
+
+nav {
+  grid-area: nav;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  margin: 0 auto 0 auto;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#tracks {
+  grid-area: tracks;
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i6.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+
+#track-links {
+  grid-area: track-links;
+  color: white;
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i9.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  z-index: 2;
+}
+
+#empty {
+  grid-area: empty;
+}
+
+.table-space {
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border: none;
+  height: 100%;
+}
+
+.table-bg {
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  margin: 20rem auto auto auto;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+}
+
+h2 {
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+.header-row {
+  background-color: #404040;
+}
+
+.row1 {
+  background-color: #d9d9d9;
+}
+
+.row2 {
+  background-color: #e5e5e5;
+}
+
+td > a {
+  color: #fca311;
+}
+
+table,
+tr,
+td {
+  border: none;
+}
+
+.c-ico {
+  color: var(--or);
+  transition: all 0.2s ease-in-out;
+}
+
+.c-ico:hover {
+  transform: scale(0.8);
+  color: white;
+}

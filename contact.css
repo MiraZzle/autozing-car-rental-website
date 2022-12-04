@@ -1,0 +1,93 @@
+:root {
+  --db: #14213e;
+  --or: #fca311;
+  --gr: #e5e5e5;
+}
+
+.grid-wrapper {
+  height: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+
+  grid-template-areas:
+    "nav"
+    "contact"
+    "footer";
+}
+
+#contact-bg {
+  display: flex;
+
+  grid-area: contact;
+  background-image: linear-gradient(
+      rgba(20, 33, 62, 0.7),
+      rgba(20, 33, 62, 0.7)
+    ),
+    url(resources/images/i7.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+
+#empty {
+  grid-area: empty;
+}
+
+.info-bg {
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 60%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.8fr;
+
+  grid-template-areas:
+    "ct-head ct-head"
+    "description contact-links";
+}
+
+#description {
+  grid-area: description;
+  margin: auto;
+}
+
+#contact-links {
+  grid-area: contact-links;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+
+.ct-info {
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.ct-content {
+  text-align: left;
+  margin: auto;
+  width: 80%;
+  height: 140%;
+}
+
+.ct-parent {
+  margin: auto;
+}
+
+#header-contact {
+  grid-area: ct-head;
+  text-align: center;
+}
+
+.ct-icon {
+  color: var(--or);
+}
