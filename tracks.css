@@ -7,7 +7,7 @@
 .grid-wrapper {
   height: 100%;
   display: grid;
-  height: 170vh;
+  height: 180vh;
 
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 40rem 1fr 20rem 5rem;

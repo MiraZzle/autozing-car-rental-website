@@ -66,6 +66,8 @@ nav {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   padding: 2rem;
   background-color: #14213d;
   color: white;
@@ -104,5 +106,10 @@ button.first-pg {
 }
 
 footer > a {
+  transition: all ease-in-out 0.2s;
   color: white;
+}
+
+footer > a:hover {
+  transform: scale(0.95);
 }

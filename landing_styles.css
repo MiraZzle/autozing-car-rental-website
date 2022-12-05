@@ -90,7 +90,7 @@ nav {
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(resources/images/i1.jpeg);
+    url("https://media.architecturaldigest.com/photos/5b9691509cd13621bf9b559b/2:1/w_3000,h_1500,c_limit/JPrice_Lamborghini_MCW18-1755.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -178,6 +178,7 @@ nav {
 }
 
 #CTA-btn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   text-align: center;

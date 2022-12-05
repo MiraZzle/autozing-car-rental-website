@@ -101,6 +101,8 @@
 }
 
 .panel-button {
+  font-weight: 500;
+  cursor: pointer;
   background-color: var(--or);
   border: none;
   width: 40%;
@@ -114,6 +116,7 @@
 }
 
 .panel-button:hover {
+  font-weight: 800;
   background-color: var(--db);
   color: white;
   transform: translateX(10px);
@@ -190,10 +193,10 @@
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(resources/images/i3.jpeg);
+    url(https://www.autoweb.cz/wp-content/uploads/2019/01/2020-bmw-m3-fan-render.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 70%;
+  background-position: 20%;
 }
 
 #bg-2 {
@@ -257,4 +260,33 @@
   display: flex;
   justify-content: center;
   padding: 0.2rem auto 0.5rem auto;
+}
+
+summary {
+  padding: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+summary:hover {
+  font-weight: 800;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+}
+
+details > summary {
+  list-style: url("https://api.iconify.design/material-symbols/arrow-drop-down-circle-rounded.svg?color=white&width=20&rotate=270deg");
+  color: white;
+}
+
+details:active {
+  list-style-type: "M";
 }
