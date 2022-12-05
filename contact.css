@@ -25,7 +25,7 @@
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(resources/images/i7.jpeg);
+    url(https://www.acedrive.sg/wp-content/uploads/2022/07/luxury-sports-exotic-car-rental-in-singapore.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -72,6 +72,16 @@
   align-items: center;
 }
 
+.ct-info a {
+  padding-left: 1rem;
+  color: var(--or);
+  transition: all 0.1s ease-in-out;
+}
+
+.ct-info a:hover {
+  color: var(--db);
+  transform: scale(1.05);
+}
 .ct-content {
   text-align: left;
   margin: auto;

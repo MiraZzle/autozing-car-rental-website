@@ -24,12 +24,14 @@ nav {
   grid-area: nav;
 }
 
-h3 {
+th {
+  padding: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   margin: 0 auto 0 auto;
   font-size: 1.5rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 #tracks {
@@ -38,7 +40,7 @@ h3 {
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(resources/images/i6.jpeg);
+    url(https://d62-a.sdn.cz/d_62/c_img_gR_a/l5aH9/45.jpeg?fl=cro,0,0,1920,1080%7Cres,2560,,1%7Cwebp,75);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -51,7 +53,7 @@ h3 {
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(resources/images/i9.jpeg);
+    url(i9.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -103,6 +105,11 @@ h2 {
 
 td > a {
   color: #fca311;
+  transition: all 0.1s ease-in-out;
+}
+
+td > a:hover {
+  color: var(--db);
 }
 
 table,
