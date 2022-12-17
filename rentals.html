@@ -8,19 +8,20 @@
     <title>Nabídka modelů</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="rentals.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="grid-wrapper">
       <nav>
         <h4 class="name">autoZing</h4>
         <ul class="nav-links">
-          <li><a href="index.html">Úvod</a></li>
+          <li><a href="index.html">Homepage</a></li>
           <li>|</li>
-          <li><a href="rentals.html">Nabídka</a></li>
+          <li><a href="rentals.html">Offers</a></li>
           <li>|</li>
-          <li><a href="tracks.html">Okruh</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
           <li>|</li>
-          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="contact.html">Contacts</a></li>
         </ul>
       </nav>
       <div id="showcase">
@@ -31,12 +32,12 @@
         </div>
 
         <div class="menu-container">
-          <h2>Přehled nabízených aut</h2>
+          <h2>Overview of offered cars</h2>
           <div class="selection-bg">
             <ul class="offer-list">
               <li class="show">
                 <details>
-                  <summary>Německá</summary>
+                  <summary>German</summary>
                   <ul class="model-list">
                     <li>AUDI R8 COUPÉ</li>
                     <li>PORSCHE CAYMAN</li>
@@ -49,7 +50,7 @@
               </li>
               <li class="show">
                 <details>
-                  <summary>Italská</summary>
+                  <summary>Italian</summary>
                   <ul class="model-list">
                     <li>MASERATI GRANTURISMO S</li>
                     <li>ALFA ROMEO GIULIA GTAM</li>
@@ -59,7 +60,7 @@
               </li>
               <li class="show">
                 <details>
-                  <summary>Americká</summary>
+                  <summary>American</summary>
                   <ul class="model-list">
                     <li>FORD MUSTANG</li>
                     <li>CHEVROLETTE CORVETTE</li>
@@ -73,8 +74,8 @@
       </div>
 
       <div id="german">
-        <h2>Německá</h2>
-        <div class="car-column">
+        <h2>German</h2>
+        <div class="car-column carHidden">
           <div class="car-panel">
             <div class="model-img">
               <img
@@ -124,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="car-column">
+        <div class="car-column carHidden">
           <div class="car-panel">
             <div class="model-img">
               <img
@@ -177,8 +178,8 @@
       </div>
 
       <div id="italian">
-        <h2>Italská</h2>
-        <div class="car-column">
+        <h2>Italian</h2>
+        <div class="car-column carHidden">
           <div class="car-panel">
             <div class="model-img">
               <img
@@ -231,8 +232,8 @@
       </div>
 
       <div id="american">
-        <h2>Americká</h2>
-        <div class="car-column">
+        <h2>American</h2>
+        <div class="car-column carHidden">
           <div class="car-panel">
             <div class="model-img">
               <img

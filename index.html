@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="landing_styles.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script defer src="app.js"></script>
   </head>
 
   <body>
@@ -16,22 +17,22 @@
       <nav>
         <h4 class="name">autoZing</h4>
         <ul class="nav-links">
-          <li><a href="index.html">Úvod</a></li>
+          <li><a href="index.html">Homepage</a></li>
           <li>|</li>
-          <li><a href="rentals.html">Nabídka</a></li>
+          <li><a href="rentals.html">Offers</a></li>
           <li>|</li>
-          <li><a href="tracks.html">Okruh</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
           <li>|</li>
-          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="contact.html">Contacts</a></li>
         </ul>
       </nav>
 
       <div id="CTA">
-        <div class="quote">
+        <div class="quote hidden">
           <p>
-            “Ut enim ad minima veniam, quis nostrum exercitationem ullam
-            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-            consequatur?”
+            "A sports car is the ultimate expression of freedom and
+            independence. It's not just a mode of transportation, it's a way of
+            life."
           </p>
           <button id="CTA-btn" class="main-btn">
             <iconify-icon
@@ -39,53 +40,55 @@
               icon="material-symbols:flag-rounded"
               width="26"
             ></iconify-icon>
-            Chci zážitek!
+            Experience it!
           </button>
         </div>
       </div>
 
-      <div id="title1"><h2>O nás</h2></div>
+      <div id="title1"><h2>About Us</h2></div>
 
       <div id="section1">
         <article class="section-div">
-          <h3>1</h3>
-          <p>
-            Nullam dapibus fermentum ipsum. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Praesent id justo in neque
-            elementum ultrices.
+          <h3 class="hidden">1</h3>
+          <p class="hidden">
+            Mat and his friend Jack had always dreamed of starting their own
+            business. One day, they came across a great deal on a fleet of
+            gently used cars and decided to take the plunge and start a car
+            rental business.
           </p>
           <button class="main-btn">Click me</button>
         </article>
       </div>
       <div id="section2">
         <article class="section-div">
-          <h3>2</h3>
-          <p>
-            Nullam dapibus fermentum ipsum. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Praesent id justo in neque
-            elementum ultrices.
+          <h3 class="hidden">2</h3>
+          <p class="hidden">
+            The founders made sure to provide top-notch customer service,
+            ensuring that their clients had a great experience with their sleek
+            and stylish sports cars. Jack and Mat were confident that their
+            dedication to providing the best service would lead to many more
+            satisfied customers in the future.
           </p>
           <button class="main-btn">Click me</button>
         </article>
       </div>
       <div id="section3">
         <article>
-          <h3>3</h3>
-          <p>
-            Nullam dapibus fermentum ipsum. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Praesent id justo in neque
-            elementum ultrices.
+          <h3 class="hidden">3</h3>
+          <p class="hidden">
+            Mats and Jacks sports car rental service has become a huge success
+            in recent years. Their dedication to providing top-quality vehicles
+            and excellent customer service has helped them stand out in a
+            competitive market. Today, they have a loyal customer base and their
+            business continues to thrive.
           </p>
           <button class="main-btn">Click me</button>
         </article>
       </div>
 
       <div id="services">
-        <h2>Služby</h2>
-        <div class="service-box">
+        <h2>Services</h2>
+        <div class="service-box hidden">
           <div class="service-item">
             <iconify-icon
               class="icon-serv"
@@ -93,7 +96,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Odtah</div>
+            <div>Towing</div>
           </div>
 
           <div class="service-item">
@@ -103,7 +106,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Registr</div>
+            <div>User Registry</div>
           </div>
 
           <div class="service-item">
@@ -113,7 +116,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Podpora</div>
+            <div>Support</div>
           </div>
 
           <div class="service-item">
@@ -123,7 +126,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Servis</div>
+            <div>Technical Support</div>
           </div>
 
           <div class="service-item">
@@ -133,14 +136,14 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Doručení</div>
+            <div>Delivery</div>
           </div>
         </div>
       </div>
 
       <div id="perks">
-        <h2>Proč my</h2>
-        <div class="service-box">
+        <h2>Why Us?</h2>
+        <div class="service-box hidden">
           <div class="service-item">
             <iconify-icon
               class="icon-perk"
@@ -148,7 +151,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Úspornost</div>
+            <div>Affordability</div>
           </div>
 
           <div class="service-item">
@@ -158,7 +161,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Široký výběr</div>
+            <div>Wide Selection</div>
           </div>
 
           <div class="service-item">
@@ -168,7 +171,7 @@
               width="60"
               height="60"
             ></iconify-icon>
-            <div>Časová flexibilita</div>
+            <div>Time Flexibility</div>
           </div>
         </div>
       </div>

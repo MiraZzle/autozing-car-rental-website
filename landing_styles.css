@@ -183,7 +183,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 #CTA-btn:hover {

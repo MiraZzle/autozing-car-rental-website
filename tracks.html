@@ -9,56 +9,57 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tracks.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="grid-wrapper">
       <nav>
         <h4 class="name">autoZing</h4>
         <ul class="nav-links">
-          <li><a href="index.html">Úvod</a></li>
+          <li><a href="index.html">Homepage</a></li>
           <li>|</li>
-          <li><a href="rentals.html">Nabídka</a></li>
+          <li><a href="rentals.html">Offers</a></li>
           <li>|</li>
-          <li><a href="tracks.html">Okruh</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
           <li>|</li>
-          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="contact.html">Contacts</a></li>
         </ul>
       </nav>
       <div id="tracks">
-        <div class="table-bg">
-          <h2>okruhy</h2>
+        <div class="table-bg hidden">
+          <h2>Tracks</h2>
           <div class="table-space">
             <table>
               <thead>
                 <tr class="header-row">
-                  <th>Název</th>
-                  <th>Země</th>
-                  <th>Délka</th>
-                  <th>Další informace</th>
+                  <th>Name</th>
+                  <th>Country</th>
+                  <th>Length</th>
+                  <th>Additional Information</th>
                 </tr>
               </thead>
 
               <tr class="row1">
                 <td>Automotodrom Brno</td>
-                <td>Česká Republika</td>
+                <td>Czech Republic</td>
                 <td>5 403m</td>
                 <td>
                   <a
                     href="https://cs.wikipedia.org/wiki/Masaryk%C5%AFv_okruh"
                     target="_blank"
-                    >Informace</a
+                    >Find Out</a
                   >
                 </td>
               </tr>
               <tr class="row2">
                 <td>Nürburgring</td>
-                <td rowspan="3">Německo</td>
+                <td rowspan="3">Germany</td>
                 <td>5 148m</td>
                 <td>
                   <a
                     href="https://cs.wikipedia.org/wiki/Nürburgring"
                     target="_blank"
-                    >Informace</a
+                    >Find Out</a
                   >
                 </td>
               </tr>
@@ -69,7 +70,7 @@
                   <a
                     href="https://en.wikipedia.org/wiki/Sachsenring"
                     target="_blank"
-                    >Informace</a
+                    >Find Out</a
                   >
                 </td>
               </tr>
@@ -80,7 +81,7 @@
                   <a
                     href="https://en.wikipedia.org/wiki/Hockenheimring"
                     target="_blank"
-                    >Informace</a
+                    >Find Out</a
                   >
                 </td>
               </tr>
@@ -90,8 +91,8 @@
       </div>
       <div id="empty"></div>
       <div id="track-links">
-        <h2>Rezervace okruhů</h2>
-        <div class="service-box">
+        <h2>Track Reservations</h2>
+        <div class="service-box hidden">
           <div class="tr-link service-item">
             <iconify-icon
               class="c-ico"
