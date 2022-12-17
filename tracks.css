@@ -9,7 +9,7 @@
   display: grid;
 
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 40rem 20rem 20rem 5rem;
+  grid-template-rows: 5rem 40rem 40rem 20rem 5rem;
 
   grid-template-areas:
     "nav"
@@ -39,7 +39,7 @@ th {
       rgba(20, 33, 62, 0.7),
       rgba(20, 33, 62, 0.7)
     ),
-    url(https://d62-a.sdn.cz/d_62/c_img_gR_a/l5aH9/45.jpeg?fl=cro,0,0,1920,1080%7Cres,2560,,1%7Cwebp,75);
+    url(https://roadgrip.co.uk/wp-content/uploads/concours-club-roadgrip-track-painting.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -61,6 +61,14 @@ th {
 
 #empty {
   grid-area: empty;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#empty iframe {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .table-space {

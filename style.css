@@ -131,11 +131,18 @@ footer > a:hover {
 
 .carHidden {
   opacity: 0;
+  transform: scale(0);
   filter: blur(6px);
   transition: all 0.5s;
 }
 
 .showCar {
   opacity: 1;
+  transform: scale(1);
   filter: blur(0);
+}
+
+span {
+  color: var(--or);
+  font-weight: 700;
 }
