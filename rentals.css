@@ -63,12 +63,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .car-panel:hover {
   transform: scale(1.1);
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+  overflow: hidden;
 }
+
+/*.car-panel:hover img {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+} */
 
 .car-panel h6 {
   padding: 0.5rem;
