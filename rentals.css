@@ -22,7 +22,7 @@
     "footer";
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .car-column {
     display: flex;
     justify-content: center;
@@ -34,7 +34,26 @@
 
   .car-panel {
     margin: auto !important;
-    background-color: #fca311;
+  }
+
+  .bg-third {
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .car-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 4rem;
+    width: 50%;
+  }
+
+  .car-panel {
+    margin: auto !important;
   }
 
   .bg-third {
