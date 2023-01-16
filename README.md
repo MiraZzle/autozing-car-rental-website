@@ -1,6 +1,6 @@
 # Mockup Car Rental Website
 
-## About the site
+## About
 
 ### Purpose
 This site was created as a part of my Introduction to Networking class.
