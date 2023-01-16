@@ -3,7 +3,7 @@
 ## About
 
 ### Purpose
-This site was created as a part of my Introduction to Networking class.
+This site was created as a part of my Introduction to Networking class(NSWI141).
 I was only allowed to use pure HTML and CSS with certain restrictions. The project took about a week to finish.
 
 ### Additions
