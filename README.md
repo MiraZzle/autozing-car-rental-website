@@ -1,4 +1,4 @@
-# Mockup Car Rental Website (NSWI141)
+# AutoZing - Mockup Car Rental Website (NSWI141)
 
 ## About
 
